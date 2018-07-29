@@ -24,7 +24,7 @@ public class Hello {
         if (localDir.exists()) {
             FileUtils.forceDelete(localDir.getParentFile());
         }
-        FileUtils.forceMkdir(localDir);
+        FileUtils.forceMkdir(localDir.getParentFile());
     }
 
 }
